@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.haesleinhuepf</groupId>
+		<artifactId>clij-parent-pom</artifactId>
+		<version>2.5.1.1</version>
+		<relativePath />
+	</parent>
+
+	<groupId>net.haesleinhuepf</groupId>
+	<artifactId>TrackMate_clij2</artifactId>
+	<version>2.5.1.1</version>
+
+	<name>TrackMate clij2 bridge</name>
+	<description>A clij2 detector plugin for TrackMate</description>
+	<url>https://imagej.net/TrackMate_examples</url>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>Fiji</name>
+		<url>https://fiji.sc/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License v3+</name>
+			<url>https://www.gnu.org/licenses/gpl.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>haesleinhuepf</id>
+			<name>Robert Haase</name>
+			<url>https://haesleinhuepf.net</url>
+			<organization>DFG Cluster of Excellence Physics of Life, TU Dresden</organization>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>none</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/tags/fiji</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/clij/TrackMate-clij2</connection>
+		<developerConnection>scm:git:git@github.com:clij/TrackMate-clij2</developerConnection>
+		<tag>HEAD</tag>
+		<url>scm:git:git@github.com:clij/TrackMate-clij2</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>scm:git:git@github.com:clij/TrackMate-clij2/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/clij/TrackMate-clij2/actions</url>
+	</ciManagement>
+
+	<properties>
+		<package-name>net.haesleinhuepf</package-name>
+		<license.licenseName>bsd_3</license.licenseName>
+		<license.copyrightOwners>Robert Haase, MPI CBG</license.copyrightOwners>
+		<scijava.app.directory>C:/programs/fiji-win64/Fiji.app/</scijava.app.directory>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Fiji dependencies -->
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>TrackMate</artifactId>
+			<version>7.0.3</version>
+		</dependency>
+
+		<!-- ImageJ dependencies -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-common</artifactId>
+		</dependency>
+
+		<!-- ImgLib2 dependencies -->
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+		</dependency>
+
+		<!-- SciJava dependencies -->
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+		</dependency>
+
+		<!-- CLIJ dependencies -->
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij2_</artifactId>
+		</dependency>
+	</dependencies>
+</project>
