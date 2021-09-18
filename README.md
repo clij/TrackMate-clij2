@@ -3,7 +3,7 @@ TrackMate-clij2
 
 A [clij2](https://clij.github.io) plugin for [TrackMate](https://imagej.net/plugins/trackmate/).
 
-![img.png](docs/trackmate_clij2_screenhot.png)
+![img.png](docs/config_detector.png)
 
 This plugin was inspired by [TrackMate-Examples](https://github.com/fiji/TrackMate-examples), [TrackMate-MorpholibJ](https://github.com/tinevez/TrackMate-MorphoLibJ) and [TrackMate-StarDist](https://github.com/tinevez/TrackMate-StarDist) 
 and this [preprint by Dimitry Ershov](https://www.biorxiv.org/content/10.1101/2021.09.03.458852v1.full).
@@ -12,8 +12,6 @@ and this [preprint by Dimitry Ershov](https://www.biorxiv.org/content/10.1101/20
 
 * Download and install [Fiji](https://fiji.sc/Downloads)
 * Install [clij](https://clij.github.io/clij2-docs/installationInFiji)
-* Download [TrackMate-7.0.4](https://maven.scijava.org/service/local/repositories/releases/content/sc/fiji/TrackMate/7.0.4/TrackMate-7.0.4.jar) and replace the older TrackMate...jar in your Fiji's plugins directory.
-* Download [TackMate-clij2.jar](https://github.com/clij/TrackMate-clij2/releases/download/2.5.1.1/TrackMate_clij2-2.5.1.1.jar) and put it in your Fiji's jars directory.
 
 # Usage
 
