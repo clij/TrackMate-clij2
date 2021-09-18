@@ -6,6 +6,7 @@ import java.util.List;
 import fiji.plugin.trackmate.util.TMUtils;
 import ij.ImagePlus;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+import net.haesleinhuepf.clij.coremem.enums.NativeTypeEnum;
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.imagej.ImgPlus;
 import net.imglib2.Interval;
@@ -88,7 +89,7 @@ public class CLIJ2VoronoiOtsuLabelingDetector< T extends RealType< T > & NativeT
 		CLIJ2 clij2 = CLIJ2.getInstance();
 
 		ClearCLBuffer input_image = clij2.push(tmp);
-		ClearCLBuffer output_labels = clij2.create_like(input_image);
+		ClearCLBuffer output_labels = clij2.create(input_image.getDimensions(), NativeTypeEnum.UnsignedShort);
 
 		clij2.voronoiOtsuLabeling(input_image, output_labels, spot_sigma, outline_sigma);
 
