@@ -187,6 +187,12 @@ public class CLIJ2VoronoiOtsuLabelingDetectorFactory< T extends RealType< T > & 
 		return true;
 	}
 
+	@Override
+	public CLIJ2VoronoiOtsuLabelingDetectorFactory< T > copy()
+	{
+		return new CLIJ2VoronoiOtsuLabelingDetectorFactory<>();
+	}
+
 	/*
 	 * MAIN METHOD
 	 */
