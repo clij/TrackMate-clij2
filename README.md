@@ -1,6 +1,9 @@
 TrackMate-clij2
 ===============
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5983244.svg)](https://doi.org/10.5281/zenodo.5983244)
+
+
 A [clij2](https://clij.github.io) plugin for [TrackMate](https://imagej.net/plugins/trackmate/).
 
 ![img.png](docs/config_detector.png)
